@@ -38,9 +38,15 @@
                         <a href="#experience" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blogs" class="nav-link">Projects</a>
+                        <a href="#blogs" class="nav-link">Certification</a>
                     </li>
-                    <li class="nav-it em">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
@@ -317,13 +323,13 @@
             </div>
         </div>
 
-        <!--=============== Portfolio ===============-->
+
 
         <!--=============== Course Done ===============-->
         <section class="section" id="blogs">
             <div class="container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Courses</h2>
+                <h2 class="section-title padd-15">Certification</h2>
 
                 <div class="row">
                     <!-- blog item -->
@@ -331,7 +337,7 @@
                         <div class="inner">
                             <div class="thumb">
                                 <a href="#"><span class="category">HTML</span></a>
-                                <a href="#"><img src="1.jpg" alt=""></a>
+                                <img src="1.jpg" alt="">
                             </div>
                             <div class="details">
                                 <h3 class="title"><a href="#">Introduction to HTML
@@ -383,7 +389,42 @@
                 </div>
             </div>
         </section>
+
+        <!--=============== Gallery ===============-->
+        <section class="section" id="gallery">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Gallery</h2>
+                <div class="row">
+                    <!-- gallery items -->
+
+                    <div class="full-img" id="fullImgBox">
+                        <img src="img1.jpg" id="fullImg">
+                        <span onclick="closeFullImg()">X</span>
+                    </div>
+
+                    <div class="img-gallery">
+                        <img src="gal8.jpg" onclick="openFullImg(this.src)">
+                        <img src="gal1.jpg" onclick="openFullImg(this.src)">
+                        <img src="gal2.jpg" onclick="openFullImg(this.src)">
+                        
+                        <img src="gal4.jpg" onclick="openFullImg(this.src)">
+
+                        <img src="gal5.jpg" onclick="openFullImg(this.src)">
+                        <img src="gal3.jpg" onclick="openFullImg(this.src)">
+                        <img src="gal6.jpg" onclick="openFullImg(this.src)">
+                        <img src="gal7.jpg" onclick="openFullImg(this.src)">
+                        
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!--=============== Contact ===============-->
+
 
         <!--=============== Footer ===============-->
         <footer class="footer">
