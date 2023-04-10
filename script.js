@@ -53,6 +53,40 @@ function navHigh() {
 }
 /*=============== PORTFOLIO ITEM FILTER ===============*/
 
+const filterContainer = document.querySelector(".portfolio-filter-inner"),
+  filterBtns = filterContainer.children,
+  totalFilterBtn = filterBtns.length;
+portfolioItems = document.querySelector(".portfolio-items").children;
+totalPortfolioItem = portfolioItems.length;
+console.log(portfolioItems)
+
+for (let i = 0; i < totalFilterBtn; i++) {
+  filterBtns[i].addEventListener("clcik", function () {
+    filterContainer.querySelector(".active").classList.remove("active");
+    this.classList.add("active");
+  })
+}
+
+/*=============== OCNTACT  ===============*/
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
 /*=============== THEME/DISPLAY CUSTOMIZATION ===============*/
 const theme = document.querySelector("#theme-button");
 const themeModal = document.querySelector(".customize-theme");
@@ -75,7 +109,6 @@ const closeThemeModel = (e) => {
 }
 theme.addEventListener("click", openThemeModal);
 themeModal.addEventListener("click", closeThemeModel);
-
 
 /*===== FONTS =====*/
 
@@ -197,4 +230,18 @@ function openFullImg(pic) {
 }
 function closeFullImg() {
   fullImgBox.style.display = "none";
+}
+
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gamil.com",
+    Username: "aditya13tron@gmail.com",
+    Password: "aditya9875675781",
+    To: 'aditya102adi@gmail.com',
+    From: document.getElementById(".email").value,
+    Subject: "New Contact From Enquiry",
+    Body: "And this is the body"
+  }).then(
+    message => alert(message)
+  );
 }
