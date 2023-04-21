@@ -880,6 +880,7 @@
         cursor: pointer;
         white-space: nowrap;
         transition: 0.3s;
+        color: var(--color-dark);
     }
 
     .portfolio .portfolio-filter button.active {
@@ -959,15 +960,16 @@
         position: absolute;
         bottom: var(--m-1-5);
         left: var(--m-1-5);
-        font-size: 1.6rem;
+        font-size: 18px;
         display: block;
         background: var(--color-primary);
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2rem;
+        width: 30%;
         cursor: pointer;
-        border-radius: 50%;
+        border-radius: 10px;
         text-align: center;
         line-height: 28px;
+        justify-content: center;
         opacity: 0;
     }
 
@@ -1009,7 +1011,7 @@
         cursor: pointer;
         transition: 0.4s;
         border: solid 35px #fff;
-
+        border-radius: var(--border-radius);
     }
 
     .img-gallery img:hover {
@@ -1235,6 +1237,8 @@
     .btn2 {
         border: solid 2px #fff;
         cursor: pointer;
+        border-radius: var(--border-radius);
+        font-size: 14px;
     }
 
     /*========== Media Queries ==========*/
