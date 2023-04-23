@@ -545,34 +545,34 @@
     
                                 </div>
     
-                                <div class="contact-form">
+                               <div class="contact-form">
                                 
-                                    <form onsubmit="sendEmail(); reset(); return false;">
+                                    <form action="https://formspree.io/f/xayzadrz"
+                                    method="POST">
                                         <h3 class="title">Message Me</h3>
                                         <div class="input-container">
-                                            <input type="text" name="name" class="input" id="name"/>
+                                            <input type="text" name="name" class="input" id="name" required autocomplete="off">
                                             <label for="">Your Name</label>
                                             <span>Your Name</span>
                                         </div>
                                         <div class="input-container">
-                                            <input type="email" name="email" class="input" id="email"/>
+                                            <input type="email" name="email" class="input" id="email" required autocomplete="off">
                                             <label for="">Email</label>
                                             <span>Email</span>
                                         </div>
                                         <div class="input-container">
-                                            <input type="tel" name="phone" class="input" id="phone"/>
+                                            <input type="tel" name="phone" class="input" id="phone" required autocomplete="off">
                                             <label for="">Phone</label>
                                             <span>Phone</span>
                                         </div>
                                         <div class="input-container textarea" id="message">
-                                            <textarea name="message" class="input"></textarea>
+                                            <textarea name="message" class="input" required autocomplete="off"></textarea>
                                             <label for="">Message</label>
                                             <span>Message</span>
                                         </div>
                                         <button type="submit" class="btn btn2">Send message</button>
                                     </form>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
